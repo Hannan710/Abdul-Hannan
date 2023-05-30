@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.header{
+    background: rgb(24,24,22);
+background: linear-gradient(90deg, rgba(24,24,22,0.8953781341638218) 100%, rgba(173,194,192,0.7189075459285277) 77%); 
+    height: 100%;
+    display: flex;
+}
+.header-logo img{
+    height: 100px;
+    width: 180px;
+    margin: auto 93px;
+    padding: 10px;
+
+}
+.header-right-nav{
+    /* margin: auto 200px; */
+    float: right;
+    margin: auto;
+    /* justify-content: center; */
+    
+
+}
+.header-right-nav ul{
+list-style: none;
+} 
+.header-right-nav ul li{
+    display: inline-block;
+}
+.header-right-nav ul li a{
+    text-decoration: none;
+    color: rgb(249, 247, 247);
+    margin: auto 15px auto 15px;
+    font-size: 1rem;
+    font-family: 'Secular One', sans-serif;
+}
+.header-dropdown-icon{
+    margin: 44px 19px;
+    display: none;
+}
+.header-right-nav ul li a:hover{
+    background-color: rgb(233, 176, 32);
+    color: rgb(156, 1, 1);
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 15px;
+    transition: 0.9s;
+}
+
+@media only screen and (max-width:767px){
+    .header{
+height: 180px;
+flex-direction: column;
+text-align: center;
+    }
+}
+/* -------------------------- */
+.searchbar-section{
+    background: rgb(24,24,22);
+    background: linear-gradient(90deg, rgba(45, 45, 43, 0.895) 100%, rgba(173,194,192,0.7189075459285277) 77%); 
+
+    height: 100px;
+    display: flex;
+
+}
+.searchbar-section-para{
+    color: white;
+    font-size: 16px;
+    padding: 41px 104px;
+    display: flex;
+}
+#searchbar{
+    margin: auto 0px auto 441px;
+    
+    padding: 5px 5px;
+    border-radius: 11px;
+}
+.searchicon img {
+    margin: 7px -30px;
+    height: 16px;
+
+}
+@media only screen and (max-width:767px){
+    .searchbar-section-para{
+        height: 90px;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        margin: 0 52px
+
+    }
+    #searchbar{
+        display: none;
+    }
+    .searchicon img{
+        display: none;
+    }
+}
