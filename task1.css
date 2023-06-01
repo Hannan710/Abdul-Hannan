@@ -21,10 +21,8 @@
 }
 
 .header-right-nav {
-    /* margin: auto 200px; */
-    float: right;
-    margin: auto;
-    /* justify-content: center; */
+   margin: auto 0px auto 590px; 
+   
 
 
 }
@@ -72,6 +70,10 @@
         text-align: center;
         width:100%;
     }
+    .header-right-nav{
+margin: auto;
+    }
+    
 }
 
 /* -------------------------- */
@@ -92,14 +94,14 @@ width: 100%;
 }
 
 #searchbar {
-    margin: auto 0px auto 441px;
+    margin: auto 0px auto 685px;
+    padding: 7px 38px;
+    border-radius: 11px
 
-    padding: 5px 5px;
-    border-radius: 11px;
 }
 
 .searchicon img {
-    margin: 7px -30px;
+    margin: 9px -29px;
     height: 16px;
 
 }
@@ -107,16 +109,19 @@ width: 100%;
 @media only screen and (max-width:1120px) {
     .searchbar-section{
         width: 100%;
+        margin: auto;
+       
     }
    
     .searchbar-section-para {
         height: 90px;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman';
         font-size: 14px;
-        /* margin: 0 52px; */
-        float: right;
+        margin: -33px -35px;
+        
+        line-height: 2rem;
     }
 
     #searchbar {
@@ -125,8 +130,8 @@ width: 100%;
     }
 
     .searchicon img {
-        /* display: none; */
-        margin: 8px 0px 8px -44px;
+        display: none;
+        /* margin: 8px 0px 8px -44px; */
     }
 }
 
@@ -152,6 +157,12 @@ width: 100%;
     color: wheat;
     margin: 10px;
 
+}
+.navbar-section ul li a:hover{
+    background-color: lightblue;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: black;
 }
 
 @media screen and (max-width:1120px) {
@@ -183,7 +194,7 @@ width: 100%;
 /* --------------------------- */
 /* new section */
 .gadget-cate{
-    height:500px;
+    height:430px;
     width:100%;
     
     display: flex;
@@ -195,7 +206,8 @@ width: 100%;
     margin: 31px 106px;
     border-radius: 20px;
     background: rgb(174,238,227);
-background: radial-gradient(circle, rgba(174,238,227,1) 31%, rgb(153, 160, 169) 100%); 
+background: radial-gradient(circle, rgb(188, 206, 203) 31%, rgb(153, 160, 169) 100%); 
+box-shadow: 5px 5px 5px 5px black;
 }
 .gadget-cate-left-head{
     padding: 5px 12px;
@@ -259,6 +271,7 @@ background: radial-gradient(circle, rgba(174,238,227,1) 31%, rgb(153, 160, 169) 
         width: 800px;
         padding: 28px;
         margin: 16px;
+        box-shadow: 5px 5px 5px  rgb(109, 105, 105);
     
   }
  
@@ -267,7 +280,7 @@ background: radial-gradient(circle, rgba(174,238,227,1) 31%, rgb(153, 160, 169) 
   @media Only screen and (max-width:1120px)
   {
     .gadget-cate{
-        height: 100%;
+        height: 30%;
         width: 100%;
         flex-direction: row;
         overflow-y: hidden;
@@ -278,6 +291,7 @@ background: radial-gradient(circle, rgba(174,238,227,1) 31%, rgb(153, 160, 169) 
         background: none;
             width:150px;
             height: 250px;
+            box-shadow: none;
         
     }
     .gadget-cate-left-head h6{
@@ -287,47 +301,126 @@ background: radial-gradient(circle, rgba(174,238,227,1) 31%, rgb(153, 160, 169) 
     
     .dropdown{
         padding: 0px 10px 10px 0px;
-        
+        display: none;
     }
     .dropbtn{
         position: relative;
-        
+        margin-bottom: 0;
+        padding: 0;
 
     }
     .dropdown-content{
         width: 100%;
         position: absolute;
-       
-      
+        margin-top: 0;
+        margin-left: 90px;
+         
         left: 0;
     }
     .dropdown-content a {
         padding: 6;
         
     }
-    .dropdown{
-        display: none;
-    }
+   
     .gadget-cate-left:hover .dropdown{
         display: block !important;
-        
+        box-shadow: 3px 3px 3px black;
     }
    
-    .dropbtn{
-        margin-bottom: 0;
-        padding: 0;
-    }
-    .dropdown-content{
-          
-        margin-top: 0;
-        margin-left: 90px;
-        
-    }
-  
+ 
     .gadget-cate-right img{
         
         width: 100%;
-        padding: initial;
+       
         margin: 38px 0 0px -75px;
   }
   }
+  /* -------------------------- */
+  .banner-wallpaper{
+    /* margin-top: 0;
+    padding:0; */
+  }
+  .banner-wallpaper img{
+    width: 100%;
+  
+    background-position: center;
+    
+   
+  }
+  @media only screen and (max-width:1140px){
+    .banner-wallpaper img{
+        width: 100%;
+        margin-top: 15px;
+    }
+  }
+  /* ----------------- */
+.card-product{
+    background-color:#f6e58d;
+    height: 350px;
+    margin-top: 85px;
+    width: 100%;
+}
+  .card-product .card-images{
+display: flex;
+width: 90%;
+margin: 0 auto;
+justify-content: space-between;
+
+
+  }
+  .card-product .card-images div img{
+    width: 400px;
+    height: 250px;
+    margin-top: 3rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+
+  }
+  .card-product .card-images .image1{
+    width:100%;
+    position: relative;
+  }
+  .card-product .card-images .image1{
+    width:100%;
+    height:auto;
+    /* border: 1px solid #eee; */
+    display: block;
+  }
+  .card-product .card-images .image1 .container{
+    margin-top: 48px;
+    width: 94%;
+    height: 83%;
+    position: absolute;
+    /* padding: 15px; */
+    top: 0;
+    /* left: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(57, 54, 54, 0.5);
+    color: #222;
+    opacity: 0;
+    transition: 0.6s;
+    margin-left: 9px;
+  }
+  .card-product .card-images .image1 .container:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .card-product .card-images .image1 .container h4{
+font-size:25px ;
+color: red;
+  }
+  .card-product .card-images .image1 .container p{
+    font-size: 16px;
+    color: white;
+  }
+@media only screen and (max-width:1140px){
+    .card-product{
+        width: 100%;
+    }
+}
+      
